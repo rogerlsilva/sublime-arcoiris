@@ -1,3 +1,25 @@
+@media (max-width: 600px) {
+    body.body-with-logo::before {
+        top: 10px; /* Ajustar a posição */
+        left: 10px;
+        background-size: 80px; /* Reduzir o tamanho da logo */
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Esconder o menu */
+    }
+    nav .hamburger {
+        display: block; /* Mostrar o ícone de menu */
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 601px) {
+    nav .hamburger {
+        display: none; /* Esconder o hamburger em telas maiores */
+    }
+}
 
 body {
     font-family: 'Poppins', sans-serif;
