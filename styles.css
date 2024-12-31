@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+}
+body.body-with-logo::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    background: url('images/logo.png') no-repeat;
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+    z-index: -1; /* Keeps logo behind the content */
+}
+header.simple-header {
+    background: linear-gradient(to right, #3498db, #f1c40f);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.about-text {
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: justify;
+}
+.about-text h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+footer {
+    background: linear-gradient(to right, #3498db, #f1c40f);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+footer .socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+footer .socials img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+footer .socials img:hover {
+    transform: scale(1.2);
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-item:hover {
+    transform: scale(1.05);
+}
